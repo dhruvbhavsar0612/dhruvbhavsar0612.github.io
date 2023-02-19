@@ -1,0 +1,71 @@
+/* poppins, oswald */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --text-1: #f5a575;
+    --bg-primary: rgb(12,34,32);
+    --text-2: rgb(225,235,225);
+    --bg-secondary: rgba(130,195,180);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: var(--text-2);
+    background-color: var(--bg-primary);
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.cover{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.name{
+    font-family:'Playfair Display', serif;
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: var(--text-1);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.image img{
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.image{
+    display: grid;
+    place-items: center;
+}
+
+.description{
+    display: grid;
+    place-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-2);
+    text-align: justify;
+    padding: 0 3rem ;
+    word-spacing: 5px;
+}
